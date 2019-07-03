@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screen3.dart';
 
 class Screen2 extends StatelessWidget {
   @override
@@ -13,7 +14,12 @@ class Screen2 extends StatelessWidget {
           color: Colors.red,
           child: Text('Go Forward to Screen 3'),
           onPressed: (){
-            Navigator.push(context, Screen3)
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => Screen3()
+              )
+            );
           }
         )
       )
