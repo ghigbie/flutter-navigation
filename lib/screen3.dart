@@ -16,8 +16,11 @@ class Screen3 extends StatelessWidget {
           onPressed: (){
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => {Screen2()})
-            )
+              MaterialPageRoute(
+                builder: (context){
+                  Screen2();}
+              )
+            );
           }
         ),
       )
