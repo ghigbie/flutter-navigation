@@ -14,11 +14,7 @@ class Screen2 extends StatelessWidget {
           color: Colors.blue,
           child: Text('Go Forward to Screen 3'),
           onPressed: (){
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => Screen3()
-              )
+            Navigator.pushNamed(context, '/third');
             );
           }
         )
