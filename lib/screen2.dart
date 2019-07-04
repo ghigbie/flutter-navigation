@@ -15,7 +15,6 @@ class Screen2 extends StatelessWidget {
           child: Text('Go Forward to Screen 3'),
           onPressed: (){
             Navigator.pushNamed(context, '/third');
-            );
           }
         )
       )
