@@ -14,16 +14,9 @@ class Screen3 extends StatelessWidget {
           color: Colors.green,
           child: Text('Go Back to Screen 1'),
           onPressed: (){
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context){
-                  Screen2();}
-              )
-            );
-          }
+            Navigator.pop(context);
+          })
         ),
-      )
-    );
+      );
   }
 }
